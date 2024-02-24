@@ -1,257 +1,108 @@
-*,body,ul,li,a{
-    margin:0;
-    padding:0;
-    color:white;
-    margin:0;
-    padding:0;
-
-  
-}
-a{
-    text-decoration: none;
+*{
+  margin:0;
+  padding:0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color:rgb(201, 227, 171);
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 body{
-    background-color: grey;
-    overflow: hidden;
-    max-width:1080px;
-    margin:0px auto;
+    background-color: rgb(2, 24, 24);
 }
-.hide{
-    display:none;
-
-}
-
 .banner{
-     display:block;
-    padding:10px 8px;
-    font-size: 20px;
- 
-    margin-right:90px;
-    margin-left: 10px;
-    
+    margin-left:0px;
 }
-.banner:hover{
-    background-color: rgb(179, 76, 76);
-    border:1px solid white;
+.banner a:hover{
+    display: block;
+    padding:20px 0px;
+    background-color: aqua;
 }
 nav{
+    position: relative;
+    width:90%;
+    margin:0px auto;
+    padding-inline: 10px;
+  background-color:rgb(13, 104, 19) ;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.menu-list{
     display:flex;
-
-  
-
-   
-    justify-content: space-between;
+    justify-content: center;
+    margin:0px;
+    padding:0px;
     align-items: center;
-    background-color: rgb(134, 28, 28);
+     
 }
-
-
-
-nav ul {
-    display:flex;
- 
-    justify-content:space-between;
-    align-items: center;  
-    list-style-type: none;  
-        
-}
-
-nav ul li a{
-    display:block;
-    padding:10px 20px;
-    text-decoration: none;
-    font-size:20px;
-
-}
-nav ul li a:hover{
-    background-color: rgb(222, 34, 34);
-    opacity: 0.8;
-}
-
-.home-list li a{
-    display:block;
-     font-size: 15px;
-     padding:15px 10px;
-     min-width:140px;
- 
-  
-    }
-
-    .home-list li a:hover{
-        border-bottom: 1px solid rgb(119, 122, 119);
-       opacity:.8;
-    }  
-.home{
-     position: relative;
-}
-.home-list{
-  display:block;
-    visibility: hidden;
-    opacity:0;
-    position:absolute;
-    top:200px;
-    background-color: rgb(210, 197, 197);
-    border:0.2px solid rgb(229, 199, 199);
-    
-}
-
-
-
-.home:hover .home-list{
- visibility: visible;
-top:42px;
-opacity:1;
-background-color: rgb(163, 51, 51);
- 
-transition:all 0.3s ease;
- 
- text-align: center;
-
-}
-.icon-search{
- margin-right:10px;
-}
-.icon-search:hover{
-    opacity:.7;
-}
-
-.input-search{
-    display: block;
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    top:6%;
-    left:21%;
-    padding: 8px 21px;
-    border: none;
-    transition: all .3s ease;
-}
-
-.show-search{   /*show search bar when search icon is clicked*/
-    visibility: visible;
-    opacity: 1;
-    left: 60%;
-    top: -1px;
-    width: 200px;
-    height: 30px;
-    color:white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 17px;
-    border:1px dashed white;
-    text-align: center;
-    border-radius: 6px;
-    background-color: rgb(173, 94, 94);
-}
-
-@media only screen and (max-width:591px){
-
-    nav{
-        position: fixed;
-        width:100%;
-
-    }
-    .menu-list{
-     display:block;
-    visibility:hidden;
-    opacity:0;
-    position:absolute;
-    top: 44px;
-    left: -42px;
-    background-color: rgb(183, 69, 69);
-    border:0.2px solid rgb(229, 199, 199);
-    transition: all 0.33s ease;
-    }
-    .menu-list a{
-        padding:20px 50px;
-        background-color: rgba(6, 18, 65, 0.363);
-
-    }
-    .home-list{
-        position: absolute;
-        left:170px;
-        top:10px;
-   }
- 
-
-    .menu-list a:hover{
-        background-color: blueviolet;
-    }
-
-
-
-
-
-    .banner{
-        margin:0px auto;
-        box-sizing: border-box;
-    }
-
-.input-search{
-    display: block;
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    top:6%;
-    left:21%;
-    padding: 8px 21px;
-    border: none;
-    transition: all .3s ease;
-   }
-
-
-
-   .icon-cross,.icon-menu{
-    
-    position: absolute;
-   
-    margin-left:10px;
-    font-size:25px;
-   }
-.icon-menu{
-    display:block;
-
-    font-size: 25px;
-    
-}
-
-.show-search{   /*show search bar when search icon is clicked*/
-    visibility: visible;
-    opacity: 1;
-    
-    left: 21%;
-    top: -1px;
-}
-
-
-
 .hide{
     visibility: hidden;
- }
-
 }
-
-.show-menulist{  /*  slide main menu items when menu is clicked */
-    visibility: visible;
-    opacity: 1;
-    top:44px;
-    left:0px;
-}
-
-
-
-
-
-
-
-
-
-@media only screen and (min-width:592px){
-    .icon-cross,.icon-menu{
-            display:none;
-  }
+.home-list{
+   visibility: hidden;
+   position: absolute;
+   height:0px;
+   overflow: hidden;
+   opacity:0;
+   background-color: rgb(10, 52, 49);
+   font-size: 13px;
+   border-radius: 5px; 
+   transition: all 0.4s ease;
    
-
-    .hide{
-        display:none;
-    }
 }
+
+ul li a{
+    display:block;
+    padding: 20px 22px;
+    
+
+}
+ul li a:hover,ul li a:active{
+    color:grey;
+    opacity: .8;
+    background-color:rgb(13, 74, 59);
+}
+.home:hover .home-list{
+    visibility: visible;  
+    
+   
+     height: 140px;
+     opacity: 1;
+     
+   
+}
+.home-list a{
+    padding:10px 49px;
+
+}
+.icon-menu,.icon-cross{
+    visibility: hidden;
+    position: absolute;
+}
+
+main{
+    background-color: rgb(2, 24, 24);
+
+    height:100vh;
+}
+.welcome{
+    display:block;
+    position: absolute;
+    align-items: center;
+    height:600px;
+    font-size: larger;
+    top:50%;
+    left:10%;
+    
+    
+
+    width:50%;
+}
+
+.input-search{
+    max-width: 150px;
+}
+.se
