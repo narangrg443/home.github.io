@@ -11,20 +11,24 @@
     
     <header>
         <nav>
-            <i class="fa-solid fa-xmark icon-cross hide"></i>
             <i class="fa-solid fa-bars icon-menu "></i>
+            <i class="fa-solid fa-xmark icon-cross hide"></i>
+           
             <div class="banner"><a class='a-banner'href="index.html">HOME DESIGN</a></div>
             <ul class="menu-list">
-                <li class="home dropdown">
-                    <a href="#">Home</a>
+                <li><a href="#">Home</a> </li>
+                <li class="home dropdown" class="menu-item">
+                    <a href="#">Option</a>
+                   
                     <ul class="home-list">
                         <li><a href="#">Sub Item 1</a></li>
                         <li><a href="#">Sub Item 2</a></li>
                         <li><a href="#">Sub Item 3</a></li>
                         <li><a href="#">Sub Item 4</a></li>
                     </ul>
+                
+                
                 </li>
-                <li class="menu-item"><a href="#">Option</a></li>
                 <li class="menu-item"><a href="#">Contact</a></li>
                 <li class="menu-item"><a href="#">Services</a></li>
             </ul>
@@ -37,18 +41,27 @@
     </header>
     
     <main>
+        <div class="slider">
+            <div class="slide" style="background-image: url('https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
+            <div class="slide" style="background-image: url('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
+            <div class="slide" style="background-image: url('https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"></div>
+        </div>
         <div class="welcome">
            <div class="content">
-            <p class="intro"> WELCOM TO HOME DESING</p>
-            <p>
+            <p class="intro"> WELCOME TO HOME DESIGINING</p>
+            <p class="discription">
                 Design Consultants strives to enhance the lives, environments, health, and safety of its clients with integrity by creating long lasting functional and aesthetically pleasing corporate and residential interiors. Design Consultants creates interiors that are unique expressions of each individual client – well planned
             </p>
+          </div>
         </div>
-        <button><a href="#" class="btn">About Us</a></button>
+        <div class="contact-us">
+            <button><a href="#" class="btn">CONTACT US</a></button>
         </div>
-      
     </main>
-    <footer></footer>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Your Company Name. All rights reserved.</p>
+      </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>

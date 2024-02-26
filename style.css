@@ -37,6 +37,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
   }
   
   .menu-list {
@@ -45,6 +46,7 @@
     margin: 0;
     padding: 0;
     align-items: center;
+   
   }
   
   .hide {
@@ -58,8 +60,8 @@
     overflow: hidden;
     opacity: 0;
     background-color: rgb(10, 52, 49);
-    font-size: 13px;
-    border-radius: 5px;
+    font-size: 15px;
+    
     transition: all 0.4s ease;
   }
   
@@ -78,14 +80,14 @@
   
   .home:hover .home-list {
     visibility: visible;
-    height: 140px;
+    height: 142px;
     opacity: 1;
     background-color: rgba(13, 6, 31, 0.4);
     transition: all 0.44s ease;
   }
   
   .home-list a {
-    padding: 10px 49px;
+    padding: 10px 44px;
   }
   
   .icon-menu,
@@ -138,6 +140,7 @@
     background-color: #f0f0f0;
     width: 150px;
     transition: all 0.3s ease;
+    z-index: 2;
   }
   
   .search-container {
@@ -155,14 +158,19 @@
     color: rgb(15, 41, 68);
   }
   .intro{
-    
-    font-size: 33px;
+    display:inline;
+    font-size: 40px;
     margin-bottom: 22px;
     background-color:rgba(8, 40, 38,0.3);
     border-radius: 10px;
+    border-radius: 10px;
+    
   }
-  main  p{
-  background-color:rgba(8, 40, 38,0.3); 
+  main  p.discription{
+  background-color:rgba(8, 40, 38,0.4); 
+  display: inline-block;
+  border-radius: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   main{
     display: flex;
@@ -172,3 +180,167 @@
     height:80vh;
   }
 
+  footer{
+    width:50%;
+    margin:0px auto;
+    text-align: center;
+    color:#353541
+  }
+  footer p, footer span{
+   color: #e4e4ed;
+   background-color: rgba(13, 6, 31, 0.4);
+  }
+
+  .contact-us button{
+    display: block;
+    padding: 10px 25px;
+    border:1px solid rgb(255, 250, 250);
+    color:whitesmoke;
+    background-color: rgba(13, 6, 31, 0.6);
+   transition: all .33s ease;
+  }
+  .contact-us button:hover{
+    border:1px solid rgba(30, 142, 194, 0.2);
+    background-color: rgba(5, 41, 75, 0.6);
+  
+  }
+  /* body {
+    background-image: url('https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'), url('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'), url('https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    animation: flicker 3s infinite;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (max-width:555px){
+    nav{
+      overflow: hidden;
+       font-size: 12px;
+      margin:0px auto;
+  
+    
+    }
+    footer{
+      font-size: 14px;
+    }
+    .intro {
+      font-size:25px ;
+    }
+    .discription{
+      font-size:15px;
+    }
+    .banner a {
+      display: block;
+      position: relative;
+      font-size: 15px;
+      background-color: rgba(11, 68, 61, 0.464);
+     
+      padding:15px 25px;
+      padding-left:68px;
+      
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+    .menu-list{
+      visibility: hidden;
+    }
+
+    
+    ul li a {
+      display: block;
+      padding: 0px 0px;
+      transition: all 0.35s ease;
+    }
+    .input-search{
+      width:100px;
+ 
+    }
+    .input-search:focus,
+    .input-search:active {
+      outline: none;
+      border: none;
+      caret-color: #061a11;
+    
+      color: rgb(18, 94, 18);
+      margin-left: 5px;
+      font-size: 15px;
+      background-color: #f0f0f0;
+      width: 95px;
+      transition: all 0.3s ease;
+      z-index: 2;
+    }
+
+    .search-container{
+      position: relative;
+      left:-12%;
+      margin-right:20px;
+    }
+
+    .icon-menu{
+      display:block;
+      visibility: visible;
+      position: absolute;
+      left:2%;
+      padding:13px 13px;
+      font-size: 22px;
+      z-index: 22;
+    }
+
+    .home ul li a:hover{
+      background-color: rgb(23, 59, 89);
+
+    }
+   
+    .home-list {
+      visibility:hidden;
+      position: absolute;
+      left:-200px;
+      top:64px;
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+      background-color: rgb(10, 52, 49);
+      font-size: 15px;
+      
+      transition: all 0.4s ease;
+    }
+
+    .show-menulist{
+      position: absolute;
+      top:64px;
+      left:0px;
+       background-color: rgba(13, 6, 31, 0.4);
+      visibility: visible;
+      height:166px;
+      opacity: 1;
+      
+    }
+    
+    .icon-cross{
+      display: block;
+      visibility: visible;
+      position: absolute;
+      left:2%;
+      padding:13px 13px;
+      font-size: 22px;
+      z-index: 2;
+    }
+  
+    
+
+    .hide{
+      display:none;
+    }
+  }

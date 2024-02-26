@@ -1,4 +1,4 @@
-const menuList=document.querySelector('.menu-list');
+const menuList=document.querySelector('.home-list');
 const iconMenu=document.querySelector(".icon-menu");
 const iconCross=document.querySelector(".icon-cross");
 const iconSearch=document.querySelector('.icon-search');
@@ -31,3 +31,4 @@ function toggle(){
 }
 
 
+document.getElementById("currentYear").textContent = new Date().getFullYear();
